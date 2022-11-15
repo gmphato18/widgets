@@ -1,0 +1,35 @@
+.fcw-table {
+    max-width: 1300px;
+    border: 1px solid #ecececff;
+}
+
+.fcw-table-base__title {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.fcw-table-base__table {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 20px 0px 20px;
+}
+
+
+.fcw-table-base__spacer-small {
+    margin-right: 20px;
+}
+
+.fcw-table-base__mobile-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

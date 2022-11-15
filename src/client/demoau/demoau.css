@@ -1,0 +1,46 @@
+/* Import Proxima Nova font from google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.fcw-table {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana,
+        sans-serif;
+    font-size: xx-small;
+}
+
+.fcw-table-base__table-item-right__container {
+    color: rgb(70, 70, 70);
+}
+
+.fcw-table-base__table-item-right__button {
+    background-color: #3ccc9e;
+    border: 1px solid #2d9976;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.fcw-table-base__table-item-right__button:hover {
+    background-color: #2d9976;
+    border: 1px solid #1e654e;
+    color: #fff;
+}
+
+.fcw-table-base__table-item-right__button:active {
+    background-color: #ecececff;
+}
+
+.fcw-table-base__more-info__button {
+    background-color: #3ccc9e;
+    border: 1px solid #2d9976;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.fcw-table-base__more-info__button:hover {
+    background-color: #2d9976;
+    border: 1px solid #1e654e;
+    color: #fff;
+}
+
+.fcw-table-base__more-info__button:active {
+    background-color: #ecececff;
+}

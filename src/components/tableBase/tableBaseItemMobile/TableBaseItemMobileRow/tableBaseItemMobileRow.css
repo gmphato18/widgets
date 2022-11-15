@@ -1,0 +1,11 @@
+.fcw-table-base__item-mobile__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fcw-table-base__item-mobile__column__value {
+    /* font-size: 14px; */
+    font-weight: 600;
+}
