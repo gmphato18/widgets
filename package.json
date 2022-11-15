@@ -29,9 +29,9 @@
         "start": "react-scripts start",
         "start:local": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
         "build:widget": "cross-env NODE_ENV=production parcel build src/index.tsx --no-source-maps -d dist -o calculator-widget",
-        "build:table-demo": "SET NODE_ENV=production& webpack --config ./buildUtils/webpack.config.table.js --env=production",
-        "build:calc-demo": "SET NODE_ENV=production& webpack --config ./buildUtils/webpack.config.calculator.js --env=production",
-        "build:demo": "SET NODE_ENV=production& webpack --mode=development --config ./buildUtils/webpack.config.table.js --env=production"
+        "build:table-demo": "set NODE_ENV=production& webpack --config ./buildUtils/webpack.config.table.js --env=production",
+        "build:calc-demo": "set NODE_ENV=production& webpack --config ./buildUtils/webpack.config.calculator.js --env=production",
+        "build:demo": "set NODE_ENV=production& webpack --mode=development --config ./buildUtils/webpack.config.table.js --env=production"
     },
     "eslintConfig": {
         "extends": [
