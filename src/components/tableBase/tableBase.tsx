@@ -47,7 +47,7 @@ export const TableBase: FC<IProps> = ({ divElement }): JSX.Element => {
                     </div>
                 )}
             </div>
-
+            <p>test</p>
             <MoreDetails />
             <Disclaimer />
         </>
