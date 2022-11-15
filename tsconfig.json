@@ -14,9 +14,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        // "jsx": "preserve",
         "jsx": "react"
     },
-    // "include": ["src", "../Table/src/Table", "webpack.config.calculator.js"]
     "include": ["src"]
 }

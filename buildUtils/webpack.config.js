@@ -28,9 +28,10 @@ const getWebpackConfig = (webpackEnv) => {
     const isEnvProduction = !!webpackEnv.production
 
     return {
-        mode: isEnvProduction
-            ? 'production'
-            : isEnvDevelopment && 'development',
+        // mode: isEnvProduction
+        //     ? 'production'
+        //     : isEnvDevelopment && 'development',
+        mode: "development",
         resolve: {
             extensions: ['.js','.ts', '.tsx'],
             alias: {
