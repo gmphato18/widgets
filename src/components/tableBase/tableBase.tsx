@@ -2,11 +2,11 @@ import React, { FC } from 'react'
 
 import { creditCards } from '../../data/creditCards'
 // import { PersonalLoans } from '../../data/personalLoans'
-import TableBaseItem from './tableBaseItem/tableBaseItem'
+import DesktopItem from './desktopItem/desktopItem'
 
 import './tablebase.css'
 import useIsMobile from '../../hooks/useIsMobile'
-import TableBaseItemMobile from './tableBaseItemMobile/tableBaseItemMobile'
+import MobileItem from './mobileItem/mobileItem'
 import MoreDetails from './moreDetails/moreDetails'
 import Disclaimer from './disclaimer/disclaimer'
 
@@ -33,7 +33,7 @@ export const TableBase: FC<IProps> = ({ divElement }): JSX.Element => {
                     <table className="fcw-table-base__table">
                         <tbody>
                             {creditCards.items?.map((item, index) => (
-                                <TableBaseItem item={item} key={index} />
+                                <DesktopItem item={item} key={index} />
                             ))}
                         </tbody>
                     </table>
@@ -42,12 +42,11 @@ export const TableBase: FC<IProps> = ({ divElement }): JSX.Element => {
                 {isMobile && (
                     <div className="fcw-table-base__mobile-columns">
                         {creditCards.items?.map((item, index) => (
-                            <TableBaseItemMobile item={item} key={index} />
+                            <MobileItem item={item} key={index} />
                         ))}
                     </div>
                 )}
             </div>
-            <p>test</p>
             <MoreDetails />
             <Disclaimer />
         </>

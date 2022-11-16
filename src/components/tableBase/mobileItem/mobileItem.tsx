@@ -1,14 +1,14 @@
 import React, { FC } from 'react'
 import { IItem } from '../../../types/tableBase'
 
-import './tableBaseItemMobile.css'
-import TableBaseItemMobileRow from './TableBaseItemMobileRow/TableBaseItemMobileRow'
+import './mobileItem.css'
+import ItemColumn from './itemColumn/itemColumn'
 
 interface IProps {
     item: IItem
 }
 
-const TableBaseItemMobile: FC<IProps> = ({ item }) => {
+const MobileItem: FC<IProps> = ({ item }) => {
     const hasMoreThanFourColumns = item.columns.length > 4
     return (
         <div className="fcw-table-base__item-mobile">
@@ -24,7 +24,7 @@ const TableBaseItemMobile: FC<IProps> = ({ item }) => {
             </div>
             <div className="fcw-table-base__item-mobile__body">
                 {item.columns?.map((column, index) => (
-                    <TableBaseItemMobileRow column={column} key={index} />
+                    <ItemColumn column={column} key={index} />
                 ))}
             </div>
             <div className="fcw-table-base__item-mobile__footer">
@@ -39,4 +39,4 @@ const TableBaseItemMobile: FC<IProps> = ({ item }) => {
     )
 }
 
-export default TableBaseItemMobile
+export default MobileItem

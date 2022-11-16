@@ -1,0 +1,40 @@
+.fcwDesktopItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.fcwDesktopItem-Image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+}
+.fcwDesktopItem-Image img {
+    width: 200px;
+}
+.fcwDesktopItem-Wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+.fcwDesktopItem-Columns {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.fcwDesktopItem-Link {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    min-width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+}

@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
-import useDelayedState from '../../../../hooks/useDelayedState'
 import { IColumn } from '../../../../types/tableBase'
-
-import icon from '../../icon.svg'
 import Tooltip from '../../toolTip/tooltip'
+
+import './itemColumn.css'
+import useDelayedState from '../../../../hooks/useDelayedState'
 
 interface IProps {
     column: IColumn
 }
 
-const TableBaseItemColumn: FC<IProps> = ({ column }): JSX.Element => {
+const ItemColumn: FC<IProps> = ({ column }) => {
     const hasTooltip = column.additionalInfo || column.description
     const [isTooltipVisible, setIsTooltipVisible] = useDelayedState(false)
 
@@ -22,21 +22,19 @@ const TableBaseItemColumn: FC<IProps> = ({ column }): JSX.Element => {
         if (hasTooltip) setIsTooltipVisible(false, delayMS)
     }
     return (
-        <div className="fcw-table-base__table-item-right__container-column">
-            <h3 className="fcw-table-base__table-item-right__container-column-text-large">
-                {column.primaryMessage}
-            </h3>
-            {column.label}{' '}
-            {hasTooltip && (
+        <div className="fcw-table-base__item-mobile__column">
+            <div className="fcw-table-base__item-mobile__column__title"
+            >
                 <span
-                    className="fcw-table-base__item-mobile__tooltip-icon"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseOut}
+                    style={{
+                        borderBottom: hasTooltip ? "1px dotted black" : ""
+                    }}
                 >
-                    {' '}
-                    <img src={icon} alt="React Logo" />
+                    {column.label}
                 </span>
-            )}
+            </div>
             {isTooltipVisible && (
                 <Tooltip
                     message={
@@ -46,8 +44,13 @@ const TableBaseItemColumn: FC<IProps> = ({ column }): JSX.Element => {
                     }
                 />
             )}
+            <div className="fcw-table-base__item-mobile__column__value">
+                <div
+                    dangerouslySetInnerHTML={{ __html: column.primaryMessage }}
+                />
+            </div>
         </div>
     )
 }
 
-export default TableBaseItemColumn
+export default ItemColumn
