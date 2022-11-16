@@ -1,0 +1,12 @@
+.fcwLink {
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    min-width: fit-content;
+    height: fit-content;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}

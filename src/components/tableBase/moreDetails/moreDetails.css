@@ -27,8 +27,4 @@
         flex-direction: column;
         text-align: center;
     }
-
-    .fcw-table-base__more-info button {
-        margin-top: 20px;
-    }
 }

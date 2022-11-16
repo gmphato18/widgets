@@ -6,41 +6,37 @@
     border: 1px solid #ecececff;
 }
 
-.fcwDesktopItem-Link {
-    border-radius: 5px;
+.fcwLink-Primary_outline {
     border: 1px solid #76b0faff;
     color: #007bff;
-    background-color: transparent;
-    background-image: none;
     border-color: #007bff;
 }
 
-.fcwDesktopItem-Link:hover {
+.fcwLink-Primary_outline:hover {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
 }
 
-.fcwDesktopItem-Link:focus {
+.fcwLink-Primary_outline:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-.fcw-table-base__more-info__button {
+.fcwLink-Primary {
     color: #fff;
     background-color: #007bff;
     border: 1px solid #007bff;
-    border-radius: 5px;
 }
 
-.fcw-table-base__more-info__button:hover {
+.fcwLink-Primary:hover {
     background-color: #0069d9;
-    border-color: #0062cc;
+    border-color: #0062cc;  
 }
 
-.fcw-table-base__more-info__button:focus {
+.fcwLink-Primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-.fcw-table-base__more-info__button:active {
+.fcwLink-Primary:active {
     background-color: #ecececff;
 }

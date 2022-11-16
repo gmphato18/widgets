@@ -3,6 +3,7 @@ import { IItem } from '../../../types/tableBase'
 import ItemRow from './itemRow/itemRow'
 
 import './desktopItem.css'
+import Link from '../../link/link'
 
 interface IProps {
     item: IItem
@@ -24,12 +25,7 @@ const DesktopItem: FC<IProps> = ({ item }) => {
                         {item.columns.map((column, index) => (
                             <ItemRow column={column} key={index} />
                         ))}
-                        <a
-                            className="fcwDesktopItem-Link"
-                            href={item.url.naturalLinkUrl}
-                        >
-                            <div>More details</div>
-                        </a>
+                        <Link href={item.url.naturalLinkUrl} outline>More details</Link>
                     </div>
                 </td>
             </tr>

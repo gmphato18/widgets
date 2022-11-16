@@ -1,4 +1,4 @@
-.fcw-table-base__disclaimer {
+.fcwDisclaimer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.fcw-table-base__disclaimer__button {
+.fcwDisclaimer-Button {
     background: transparent;
     border: none;
     padding: 20px 45px 20px 45px;
@@ -23,7 +23,7 @@
     justify-content: space-between;
 }
 
-.fcw-table-base__disclaimer__button-icon {
+.fcwDisclaimer-Button div {
     width: 20px;
     height: 20px;
     margin-left: 10px;
@@ -37,15 +37,13 @@
     margin-right: 0.5em;
 }
 
-.fcw-table-base__disclaimer__text-wrapper {
+.fcwDisclaimer-Text {
     display: flex;
     flex-direction: column;
     font-size: 14px;
 }
-
-.fcw-table-base__disclaimer__text-wrapper__text {
+.fcwDisclaimer-Text div {
     margin-left: 45px;
     margin-right: 45px;
     margin-bottom: 20px;
-    /* max-width: 400px; */
 }

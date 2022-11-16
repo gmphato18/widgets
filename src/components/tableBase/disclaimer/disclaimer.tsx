@@ -13,14 +13,13 @@ const Disclaimer: FC<IProps> = ({ disclaimer }) => {
     const handleOnClick = () => setClose((prev) => !prev)
 
     return (
-        <div className="fcw-table-base__disclaimer">
+        <div className="fcwDisclaimer">
             <button
-                className="fcw-table-base__disclaimer__button"
+                className="fcwDisclaimer-Button"
                 onClick={(e) => handleOnClick()}
             >
                 * Important information
                 <div
-                    className="fcw-table-base__disclaimer__button-icon"
                     style={{
                         transition: 'all 0.5s ease',
                         transform: close ? 'rotate(45deg)' : 'rotate(138deg)',
@@ -29,13 +28,13 @@ const Disclaimer: FC<IProps> = ({ disclaimer }) => {
                 ></div>
             </button>
             <div
-                className="fcw-table-base__disclaimer__text-wrapper"
+                className="fcwDisclaimer-Text"
                 style={{
                     maxHeight: close ? '0px' : '500px',
                     transition: 'all 0.5s ease',
                 }}
             >
-                <div className="fcw-table-base__disclaimer__text-wrapper__text">
+                <div className="fcwDisclaimer-Text">
                     {disclaimer}
                 </div>
             </div>

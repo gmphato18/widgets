@@ -1,4 +1,6 @@
 import React, { FC } from 'react'
+import Link from '../../link/link'
+import Spacer from '../../spacer/spacer'
 
 import './moreDetails.css'
 
@@ -13,10 +15,8 @@ const MoreDetails: FC<IProps> = ({ moreDetails }) => {
                 Find the best credit cards for you, compare x,xxx loans from xx{' '}
                 lenders.
             </span>
-            <span className="fcw-table-base__spacer-small"></span>
-            <button className="fcw-table-base__more-info__button">
-                Compare more credit cards
-            </button>
+            <Spacer direction='left' space={20} />
+            <Link href={'/'} style={{marginTop: 20}}>Compare more credit cards</Link>
         </div>
     )
 }

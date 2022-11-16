@@ -3,6 +3,7 @@ import { IItem } from '../../../types/tableBase'
 
 import './mobileItem.css'
 import ItemColumn from './itemColumn/itemColumn'
+import Link from '../../link/link'
 
 interface IProps {
     item: IItem
@@ -11,29 +12,21 @@ interface IProps {
 const MobileItem: FC<IProps> = ({ item }) => {
     const hasMoreThanFourColumns = item.columns.length > 4
     return (
-        <div className="fcw-table-base__item-mobile">
-            <div className="fcw-table-base__item-mobile__header">
+        <div className="fcwMobileItem">
+            <div className="fcwMobileItem-Header">
                 <img
                     src={item.imageSrc}
                     alt={item.varianceTitle as string}
-                    className="fcw-table-base__table-item-left__icon"
                 />
-                <div className="fcw-table-base__item-mobile__header__text">
-                    {item.summary}
-                </div>
+                <p> {item.summary} </p>
             </div>
-            <div className="fcw-table-base__item-mobile__body">
+            <div>
                 {item.columns?.map((column, index) => (
                     <ItemColumn column={column} key={index} />
                 ))}
             </div>
-            <div className="fcw-table-base__item-mobile__footer">
-                <a
-                    className="fcw-table-base__table-item-right__button"
-                    href={item.url.naturalLinkUrl}
-                >
-                    <div>More details</div>
-                </a>
+            <div className="fcwMobileItem-Footer">
+                <Link href={item.url.naturalLinkUrl} outline>More details</Link>
             </div>
         </div>
     )
