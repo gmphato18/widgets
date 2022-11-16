@@ -10,13 +10,13 @@ interface IProps {
 
 const MoreDetails: FC<IProps> = ({ moreDetails }) => {
     return (
-        <div className="fcw-table-base__more-info">
-            <span className="fcw-table-base__more-info__text">
+        <div className="fcwMoreDetails">
+            <span className="fcwMoreDetails-Text">
                 Find the best credit cards for you, compare x,xxx loans from xx{' '}
                 lenders.
             </span>
-            <Spacer direction='left' space={20} />
-            <Link href={'/'} style={{marginTop: 20}}>Compare more credit cards</Link>
+            <Spacer direction='left' space={25} />
+            <Link href={'/'}>Compare more credit cards</Link>
         </div>
     )
 }

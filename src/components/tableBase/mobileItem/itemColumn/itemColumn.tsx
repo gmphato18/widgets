@@ -44,8 +44,9 @@ const ItemColumn: FC<IProps> = ({ column }) => {
                     }
                 />
             )}
-            <div className="fcw-table-base__item-mobile__column__value">
+            <div>
                 <div
+                    style={{ fontWeight: 600}}
                     dangerouslySetInnerHTML={{ __html: column.primaryMessage }}
                 />
             </div>

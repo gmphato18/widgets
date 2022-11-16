@@ -1,4 +1,4 @@
-.fcw-table-base__more-info {
+.fcwMoreDetails {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,24 +7,16 @@
     font-size: 20px;
 }
 
-.fcw-table-base__more-info__text {
+.fcwMoreDetails-Text {
     max-width: 400px;
 }
-
-.fcw-table-base__more-info__button {
-    border-radius: 5px;
-    padding: 10px 20px 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-}
-
 
 @media only screen and (max-width: 768px) {
     .fcw-table-base__more-info {
         flex-direction: column;
         text-align: center;
+    }
+    .fcwLink-Primary {
+        margin-top: 20px;
     }
 }

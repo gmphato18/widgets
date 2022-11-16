@@ -23,9 +23,9 @@ const ItemRow: FC<IProps> = ({ column }): JSX.Element => {
     }
     return (
         <div className="fcwItemRow">
-            <h3 className="fcwItemRow-Label">
+            <div className="fcwItemRow-Label">
                 {column.primaryMessage}
-            </h3>
+            </div>
             <div>
                 <span
                     onMouseEnter={handleMouseEnter}
